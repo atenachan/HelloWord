@@ -13,23 +13,21 @@
     <div id="wrap">
 
         <header>
-
-            <a href="index.html">
-                <img src="assets/img/jade.png" alt="Logotipo de Hello World">
-            </a>
-            <div class="page-title">
-                <h1>Hello World</h1>
-                <small>Lendo e Aprendendo.</small>
+            <div class="header-logo-title">
+                <a href="index.html">
+                    <img src="assets/img/jade.png" alt="Logotipo de Hello World">
+                </a>
+                <div class="header-title">
+                    <h1>Hello World</h1>
+                    <small>Lendo e Aprendendo</small>
+                </div>
             </div>
             <div class="header-search">
-
                 <form action="" method="get">
                     <input type="search" name="q" id="search">
 
-                    <input type="image" src="assets/img/busca.png" alt="Submit" width="30" height="30">
-                    <!-- <button type="submit">
-                        <img id="tamanho" src="assets/img/busca.png" alt="pesquisa fofo">
-                    </button> -->
+                    <input id="busca" type="image" src="assets/img/busca.png" alt="Submit"  placeholder="Procurar...>
+
 
                     <!--  <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button> -->
 
@@ -39,17 +37,17 @@
         </header>
 
         <nav>
-            <a href="index.html">
+            <a href="index.html" title="Página Inicial">
                 <i class="fa-solid fa-house fa-fw"></i>
                 <span>Início</span>
             </a>
 
-            <a href="contacts.html">
+            <a href="contacts.html" title="Faça contato">
                 <i class="fa-solid fa-comment fa-fw"></i>
                 <span>Contatos</span>
             </a>
 
-            <a href="about.html">
+            <a href="about.html" title="Informações">
                 <i class="fa-solid fa-circle-info fa-fw"></i>
                 <span>Sobre</span>
             </a>
@@ -59,16 +57,18 @@
         <main>
 
             <article>
-                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorum veritatis quisquam id ab
-                    molestiae exercitationem autem delectus. Et odit eius quia officiis rerum culpa nostrum perferendis
-                    minima deleniti ullam. </h2>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit esse odit dolorum asperiores
                     voluptate, rem eum quas consequatur, exercitationem vero cupiditate aut. Alias nam inventore unde
                     harum incidunt nesciunt maiores?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, inventore officia. Ullam veniam
                     laudantium alias nisi veritatis voluptatibus sint voluptate excepturi qui laboriosam ut quo
                     voluptatem, a incidunt similique odit.</p>
-                <img src="https://picsum.photos/300/200" alt="imagem qualquer">
+
+                <figure style="margin: 0;">
+                    <img src="https://picsum.photos/250/200" alt="Imagem qualquer">
+                    <figcaption>Imagem aleatória.</figcaption>
+                </figure>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur ullam quaerat, tenetur
                     mollitia facere! Velit saepe repudiandae fugit, ipsa, quod eos maiores maxime quas ab, dolor aliquam
                     consequuntur nihil.</p>
@@ -79,11 +79,14 @@
 
             <aside>
 
-                <h3>Lorem ipsuing elit. nsimet nam blanditiis eos id eius cumque ipsam quo? Qui?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam culpa dolores excepturi
-                    maiores! Tempora mollitia reprehenderit soluta voluptates, quam debitis dignissimos magni </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam culpa dolores excepturi
-                    maiores! Tempora mollitia reprehenderit soluta voluptates, quam debitis dignissimos magni </p>
+                <!-- Conteúdo inútil só para testes visuais -->
+                <h3>Lista de Links</h3>
+                <ul>
+                    <li><a href="https://github.com">GitHub</a></li>
+                    <li><a href="https://gist.github.com">Gist</a></li>
+                    <li><a href="https://catabits.com.br">CataBits</a></li>
+                </ul>
+
             </aside>
 
         </main>
