@@ -21,9 +21,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
- 
+
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  
+
   font-size: 16px;
   line-height: 1.3;
 }
@@ -36,8 +36,7 @@ body {
   background-image: url(../img/det.jpg);
 }
 
-main {
-}
+main {}
 
 /* Elementos de uso geral */
 
@@ -55,11 +54,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#meio{
-    center
-}
-
-
 /* Elemento wrap (div#wrap) */
 
 #wrap {
@@ -75,6 +69,8 @@ a:hover {
 /* Cabeçalho (header) */
 header {
   background-color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-logo-title {
@@ -114,7 +110,8 @@ header img {
   transition: 0.8s;
 }
 
-.header-search form input {
+/* [type="search"] (CSS SELECTORS ) aplica o estilo somente aonde eu quero */
+.header-search form input[type="search"] {
   flex-grow: 1;
   padding: 1rem 0;
 }
@@ -139,13 +136,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 2rem 2rem;
 }
 
 nav a {
   padding: 1rem;
   text-align: center;
 }
+
 nav a {
   padding: 1rem;
   text-align: center;
@@ -164,24 +162,46 @@ nav a i {
 
 /* Conteúdo principal */
 main {
+  display: flex;
+  flex-direction: column;
 }
 
-main article {
-}
-
+main article,
 main aside {
+  padding: 0.5 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
+
+main article {}
+
+main aside {}
 
 /* Rodapé (footer) */
 footer {
+  display: flex;
+  align-items: center;
+}
+
+footer>div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer>a {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+footer>div>a {
+  font-size: small;
+
 }
 
 /* Classes de uso geral */
-.red {
-}
+.red {}
 
-.center {
-}
+.center {}
 
 /* Elementos de formulários */
 input,
@@ -191,7 +211,54 @@ button {
   font-size: inherit;
 }
 
-@media (max-width: 600px) {
+/*
+Responsividade
+Telas de 768px ou mais... 
+*/
+
+
+@media screen and (min-width: 425px) {
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  nav a {
+    flex-direction: row;
+  }
+
+  nav a:first-child {
+    margin-right: auto;
+  }
+
+  nav a i {
+    font-size: 1.50rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  main article {
+    flex-grow: 1;
+  }
+
+  main aside {
+    min-width: 14rem;
+    max-width: 14rem;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
 
   .header-search {
     display: flex;
@@ -199,7 +266,7 @@ button {
     align-items: center;
   }
 
-  
+
   .header-search form {
     display: flex;
     padding: 10px 20px;
@@ -207,27 +274,26 @@ button {
     align-items: center;
   }
 
-  
+
   .header-search form:hover input {
     width: 400px;
   }
 
- 
+
   .header-search form input {
     width: 5px;
     outline: none;
     border: none;
     font-weight: 500;
-    transition: 0.8s; 
+    transition: 0.8s;
   }
 
-  
+
   .header-search form #busca {
     width: 50px;
     height: 50px;
     transition: 0.8s;
   }
-
 
   .header-search form:hover #search {
     outline: solid;
