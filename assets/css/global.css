@@ -36,7 +36,8 @@ body {
   background-image: url(../img/det.jpg);
 }
 
-main {}
+main {
+}
 
 /* Elementos de uso geral */
 
@@ -71,6 +72,7 @@ header {
   background-color: #000000;
   display: flex;
   flex-direction: column;
+  margin: 0 1.5rem 0 1.5rem;
 }
 
 .header-logo-title {
@@ -101,7 +103,7 @@ header img {
 .header-search {
   background-color: #ffffff;
   padding: 1rem;
-  border-radius: 50px 50px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .header-search form {
@@ -136,7 +138,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 0 1.5rem 0 1.5rem;
 }
 
 nav a {
@@ -173,9 +176,11 @@ main aside {
   padding-right: 1.5rem;
 }
 
-main article {}
+main article {
+}
 
-main aside {}
+main aside {
+}
 
 /* Rodapé (footer) */
 footer {
@@ -183,25 +188,26 @@ footer {
   align-items: center;
 }
 
-footer>div {
+footer > div {
   flex-grow: 1;
   text-align: center;
 }
 
-footer>a {
+footer > a {
   font-size: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-footer>div>a {
+footer > div > a {
   font-size: small;
-
 }
 
 /* Classes de uso geral */
-.red {}
+.red {
+}
 
-.center {}
+.center {
+}
 
 /* Elementos de formulários */
 input,
@@ -216,9 +222,7 @@ Responsividade
 Telas de 768px ou mais... 
 */
 
-
 @media screen and (min-width: 425px) {
-
   nav {
     justify-content: flex-end;
   }
@@ -232,11 +236,10 @@ Telas de 768px ou mais...
   }
 
   nav a i {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     margin-right: 1rem;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -252,20 +255,14 @@ Telas de 768px ou mais...
     min-width: 14rem;
     max-width: 14rem;
   }
-
-
-
 }
 
-
 @media only screen and (max-width: 400px) {
-
   .header-search {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 
   .header-search form {
     display: flex;
@@ -274,11 +271,9 @@ Telas de 768px ou mais...
     align-items: center;
   }
 
-
   .header-search form:hover input {
     width: 400px;
   }
-
 
   .header-search form input {
     width: 5px;
@@ -287,7 +282,6 @@ Telas de 768px ou mais...
     font-weight: 500;
     transition: 0.8s;
   }
-
 
   .header-search form #busca {
     width: 50px;
