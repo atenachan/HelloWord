@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <title>Hello Word - <?php echo $title ?></title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="header-logo-title">
+        <a href="index.php">
+          <img src="assets/img/jade.png" alt="Logotipo de Hello World" />
+        </a>
+        <div class="header-title">
+          <h1>Hello Word</h1>
+          <small>Lendo e Aprendendo</small>
+        </div>
+      </div>
+      <div class="header-search">
+        <form action="" method="get">
+          <input type="search" name="q" id="search" />
+
+          <input id="busca" type="image" src="assets/img/busca.png" alt="Submit" placeholder="Procurar..." />
+
+          <!-- <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>  -->
+        </form>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.php" title="Página Inicial">
+        <i class="fa-solid fa-house fa-fw"></i>
+        <span>Início</span>
+      </a>
+
+      <a href="contacts.php" title="Faça contato">
+        <i class="fa-solid fa-comment fa-fw"></i>
+        <span>Contatos</span>
+      </a>
+
+      <a href="about.php" title="Informações">
+        <i class="fa-solid fa-circle-info fa-fw"></i>
+        <span>Sobre</span>
+      </a>
+    </nav>
+
+    <main>
