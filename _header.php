@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/global.css" />
-  <title>Hello Word - <?php echo $title ?></title>
+  <link rel="stylesheet" href="assets/css/<?php echo $page["css"] ?>"/>
+  <title>Hello Word - <?php echo $page["title"] ?></title>
 </head>
 
 <body>
@@ -16,8 +17,8 @@
           <img src="assets/img/jade.png" alt="Logotipo de Hello World" />
         </a>
         <div class="header-title">
-          <h1>Hello Word</h1>
-          <small>Lendo e Aprendendo</small>
+          <h1><?php echo $site["title"] ?></h1>
+          <small><?php echo $site["slogan"] ?></small>
         </div>
       </div>
       <div class="header-search">
