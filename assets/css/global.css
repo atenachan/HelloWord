@@ -15,7 +15,7 @@ Ajusta o CSS para ser exibido da mesma forma em "qualquer" navegador.
 
 html,
 body {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   position: relative;
   width: 100%;
   height: 100%;
