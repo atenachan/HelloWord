@@ -38,7 +38,7 @@ SELECT
     
     -- Obtém a idade do employee em anos
     -- Referências: https://www.w3schools.com/sql/func_mysql_timediff.asp
-    TIMESTAMPDIFF(YEAR, emp_birth, CURDATE()) as emp_age 
+    TIMESTAMPDIFF(YEAR, emp_birth, CURDATE()) AS emp_age 
 
 -- Tabela original
 FROM `article`
@@ -70,9 +70,23 @@ $art = $res->fetch_assoc();
 // Altera o título da página
 $page['title'] = $art['art_title'];
 
-// debug($art);
+ //debug($art);
+
+ $lateral = <<<HTML
+
+ <div>
+     <img src="{$art['art_photo']}" alt="{$art['emp_name']}">
+     <div>
+         <h4>{$art['art_name']}</h4>
+     </div>
+ </div>
+
+ HTML;
+
+
 
 // Gera a view para o usuário
+
 $article = <<<ART
 
 <div class="article">
@@ -83,12 +97,22 @@ $article = <<<ART
 
 ART;
 
+// Atualiza as visualizações do artigo
+$sql = <<<SQL
+UPDATE article 
+    SET art_views = art_views + 1 
+WHERE art_id = '{$id}';
+SQL;
+$conn->query($sql);
+
 // Inclui o cabeçalho do documento
 require('_header.php');
 ?>
 
+
+
 <article><?php echo $article ?></article>
 
-<aside></aside>
+<aside> <?php echo $lateral ?> </aside>
 
 <?php require('_footer.php') ?>

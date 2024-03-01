@@ -18,6 +18,9 @@
  * Evita problemas de acentuação
  **/
 header("Content-type: text/html; charset=utf-8");
+setlocale(LC_ALL,'pt_BR.UTF8');
+mb_internal_encoding('UTF8'); 
+mb_regex_encoding('UTF8');
 
 /**
  * Configurações globais do site.
@@ -27,13 +30,16 @@ $site = [
     "sitename" => "Olá Mundo",              // Usado na tag <title>
     "title" => "Olá Mundo",                 // Usado na tag <header>
     "slogan" => "Lendo e entendendo",       // Usado na tag <header>
-
+    "logo" => "logo02.png",                 // Usado na tag <header>
 
     // Dados de conexão com o MySQL:
     "mysql_hostname" => "localhost",        // Servidor do banco de dados MySQL
     "mysql_username" => "root",             // Nome do usuário do MySQL para o app
     "mysql_password" => "",                 // Senha do usuário do MySQL para o app
-    "mysql_database" => "helloword"         // Nome do banco de dados do MySQL para o app
+    "mysql_database" => "helloword",        // Nome do banco de dados do MySQL para o app
+
+    // Setup da visualização
+    "summary_length" => 40                  // Tamanho do corte do resumo 
 ];
 
 /**
@@ -74,7 +80,7 @@ $conn->query('SET lc_time_names = pt_BR');
  *********************************/
 
 /**
- * Função para debug
+ * Função para debug 
  * Referências: 
  *      https://www.w3schools.com/tags/tag_pre.asp
  *      https://www.w3schools.com/php/func_var_var_dump.asp
