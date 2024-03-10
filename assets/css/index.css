@@ -1,5 +1,5 @@
 .article, .viewed > div {
-    background-color: #eee;
+    background-color: #00000079;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -8,7 +8,7 @@
 }
 
 .article:hover, .viewed > div:hover {
-    background-color: #ddd;
+    background-color: #e9c8f1c7;
 }
 
 .article img, .viewed img {
