@@ -82,6 +82,44 @@
     pointer-events: all;
 }
 
+.links {
+    font-size: 3rem;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 40% auto;
+    column-gap: 2rem; 
+    row-gap: 1rem;
+    justify-items: center;
+    justify-content: start;
+
+}
+
+#coelho{
+    width: 13rem;
+    height: 13rem;
+}
+
+@media only screen and (max-width: 760px){
+
+    #coelho{
+        width: 13rem;
+        height: 13rem;
+    }
+
+    aside{
+        display: grid;
+        justify-items: center;
+    }
+    
+    .links{
+        font-size: 3rem;
+        justify-content: space-between;
+        display: flex;
+        
+    }
+
+}
+
 
 
 /*

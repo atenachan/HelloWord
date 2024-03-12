@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: orangered;
+  color: rgb(255, 8, 0);
   text-decoration: underline;
 }
 
@@ -207,7 +207,7 @@ footer > div > a {
 }
 
 /* Classes de uso geral */
-.red { color:red;
+.red { color:rgb(233, 17, 10);
 }
 
 .center { text-align: center;

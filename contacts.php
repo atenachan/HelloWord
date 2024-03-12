@@ -182,10 +182,14 @@ require('_header.php');
 
 <aside>
     <?php require('_socialaside.php') ?>
+    <div class="links">
     <a href="https://www.instagram.com/atennachan/" target="_blank"><i class="fa-brands fa-instagram" style="color: #fbd5f6;" ></i></a>
     <a href="https://www.linkedin.com/in/fl%C3%A1via-virginya-335745204/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #fbd5f6;"></i></a>
     <a href="https://steamcommunity.com/id/atenachan/" target="_blank"><i class="fa-brands fa-steam" style="color: #fbd5f6;"></i></a>
     <a href="https://www.facebook.com/FlaviaVirginya" target="_blank"><i class="fa-brands fa-facebook" style="color: #fbd5f6;"></i></a>
+</div>
+
+<img src="assets/img/coelho.png" alt="coelhinho fofo" id="coelho">
 
 
 </aside>
