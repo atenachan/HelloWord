@@ -48,6 +48,13 @@
         <i class="fa-solid fa-circle-info fa-fw"></i>
         <span>Sobre</span>
       </a>
+
+      <a id="userAccess" href="login.php" title="Logue-se">
+        <img id="userImg" scr="" alt="">
+                <i id="userIcon" class="fa-solid fa-right-to-bracket fa-fw"></i>
+                <span id="userLabel">Login</span>
+            </a>
+
     </nav>
 
     <main>
