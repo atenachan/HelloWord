@@ -68,3 +68,7 @@ function notLogged() {
     // Altera a label para entrar
     userLabel.innerHTML = 'Entrar';
 }
+
+//
+//
+//
