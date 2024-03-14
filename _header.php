@@ -1,3 +1,13 @@
+<?php
+// Testa se solicitou a inclusão dos arquivos ".css" e ".js"
+$_css = $_js = '';
+if (isset($page['css']))
+    $_css = '<link rel="stylesheet" href="assets/css/' . $page["css"] . '">' . "\n";
+
+if (isset($page['js']))
+    $_js = '<script src="assets/js/' . $page["js"] . '"></script>' . "\n";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
