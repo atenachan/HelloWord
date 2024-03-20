@@ -33,6 +33,7 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-color: #000;
+  color: white;
   /* background-size: 30%; */
   /*background-image: url(../img/det.jpg);*/
 }
@@ -43,7 +44,7 @@ main {
 /* Elementos de uso geral */
 
 a {
-  color: rgb(255, 255, 255);
+  color: steelblue;
   text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: rgb(228, 143, 202);
+  color: orangered;
   text-decoration: underline;
 }
 

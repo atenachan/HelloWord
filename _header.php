@@ -60,7 +60,7 @@ if (isset($page['js']))
       </a>
 
       <a id="userAccess" href="login.php" title="Logue-se">
-        <img id="userImg" scr="" alt="">
+        <img id="userImg" scr="" alt="" referrerpolicy="no-referrer">
                 <i id="userIcon" class="fa-solid fa-right-to-bracket fa-fw"></i>
                 <span id="userLabel">Login</span>
             </a>

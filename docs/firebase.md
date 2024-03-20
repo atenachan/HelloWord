@@ -50,13 +50,3 @@ Por hora, siga os procedimentos e orientações do instrutor para integrar e des
 
 
 
-// Chaves de configurações do Firebase 
-const firebaseConfig = {
-    apiKey: "AIzaSyAu9ieqx08Vx_44zTuX-kGTHY8QbbPD5IU",
-    authDomain: "blog-helloword-49172.firebaseapp.com",
-    projectId: "blog-helloword-49172",
-    storageBucket: "blog-helloword-49172.appspot.com",
-    messagingSenderId: "962302076677",
-    appId: "1:962302076677:web:696cd33d6c72310852796c"
-  };
-//
