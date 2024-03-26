@@ -7,121 +7,81 @@
     border: 1px dotted red;
     border-radius: .3rem;
     color: rgb(87, 0, 0);
-}
-
-#error h4,
-#error p:last-child {
+  }
+  
+  #error h4,
+  #error p:last-child {
     margin: 0;
-}
-
-#closeme {
+  }
+  
+  #closeme {
     float: right;
     margin: -0.5rem -0.5rem 0 0;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-#contact {
+  }
+  
+  #contact {
     display: table;
     margin: auto;
     width: 100%;
-    max-width: 90%;
-}
-
-#contact label {
+    max-width: 450px;
+  }
+  
+  #contact label {
     display: block;
     padding: 0 0 .3rem .3rem;
-}
-
-#contact input,
-#contact textarea,
-#contact button {
+  }
+  
+  #contact input,
+  #contact textarea,
+  #contact button {
     padding: .4rem;
     font-size: 110%;
     border: none;
     border-radius: .4rem;
-    ;
-}
-
-#contact input,
-#contact textarea {
+  }
+  
+  #contact input,
+  #contact textarea {
     width: 100%;
     border: 1px solid red;
     border-bottom: 3px solid red;
     background-color: rgb(254, 220, 220);
-}
-
-#contact textarea {
+  }
+  
+  #contact textarea {
     height: 6rem;
     resize: vertical;
-}
-
-#contact button {
-    border: 1px solid grey;
-    padding: .5rem 1rem;
-    font-weight: bold;
+  }
+  
+  #contact button {
     background-color: #ddd;
     color: #6e6e6e;
     cursor: not-allowed;
     pointer-events: none;
-}
-
-/* Campos com valor válido */
-
-#contact input:valid,
-#contact textarea:valid {
+  }
+  
+  /* Campos com valor válido */
+  
+  #contact input:valid,
+  #contact textarea:valid {
     border: 1px solid rgb(18, 118, 0);
     border-bottom: 3px solid rgb(18, 118, 0);
-    background-color: rgb(232,240,254);
-}
-
-#contact:valid button {
+    background-color: rgb(232, 240, 254);
+  }
+  
+  #contact:valid button {
     background-color: steelblue;
     color: white;
     cursor: pointer;
     pointer-events: all;
-}
-
-.links {
-    font-size: 3rem;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: 40% auto;
-    column-gap: 2rem; 
-    row-gap: 1rem;
-    justify-items: center;
-    justify-content: start;
-
-}
-
-#coelho{
-    width: 13rem;
-    height: 13rem;
-}
-
-@media only screen and (max-width: 760px){
-
-    #coelho{
-        width: 13rem;
-        height: 13rem;
-    }
-
-    aside{
-        display: grid;
-        justify-items: center;
-    }
-    
-    .links{
-        font-size: 3rem;
-        justify-content: space-between;
-        display: flex;
-        
-    }
-
-}
-
-
-
-/*
-rgb(232,240,254);
-*/
+  }
+  
+  #btnAnother {
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
